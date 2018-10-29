@@ -85,15 +85,15 @@ Testing
 
 1. Name: Give your project proposal a name (and edit the top line of this file)
 
-
+BlackJack
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 
-
+The amount money for each players and win or lose for this round of game.
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
-
+the money that player bets on, 
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
 
