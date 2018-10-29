@@ -1,4 +1,4 @@
-# X-Team NN Project Proposal
+# X-Team 35 Project Proposal
 
 See https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code for tips on using *Markdown* tags to format __.md__ files
 
@@ -28,9 +28,58 @@ Be sure to submit corresponding image files, i.e. figure1.png (or figure1.jpg) f
  Tip: Your custom data structure can be composed of or extensions of data structures that you have learned and used in previous programming assignments.  We're looking for decisions about how to build a high-level data structure that will likely have lower-level components.
 
 ## Problem Description
+We want to implement a program that simulates rounds of blackjack.
 
-Briefly describe a problem that your team would like to solve.  
-Describe at a high level a program that could solve that problem.
+The program's main class is outlined as follows:
+
+- The user starts with $100 virtual dollars to bet with
+- The game loop begins
+
+- The deck of cards is shuffled (initialized, randomly put onto a stack)
+- The user chooses how much they want to bet for the round
+- The user would be shown their initial cards, and they would be given the option to hit or stay
+- based on their input, a hit or stay method would be called
+- if they stay, the program moves on
+- if they hit, it keeps looping until the user busts or chooses to stay
+- Once the user is done with their turn, the program simulates the dealer's hand
+- If the dealer busts, or if they have a lower value than the user, the user wins.
+- The user wins or loses the amount of money based on if they won
+
+- This loop repeats until the user chooses to quit or if they run out of memory
+
+The program would utilize a stack to simulate the deck of cards.
+- Each individual card would be put onto the stack in a random order each time
+- Since cards are never put back into the deck without shuffling, we don't have to worry about certain cards having precedence over others
+- The cards would be popped off the stack when a new card is need in the program.
+
+Testing
+- With the deck
+- test if the size of the deck is changing
+- test if the suits are in the correct quantity
+- test to see if there deck is in different orders each new round
+- test to make sure all cards are able to be popped from the stack
+
+- For the player
+- Test to make sure the sum of the players hands are correct
+- Test to make sure the player busts if their cards sum to over 21
+- Test to make sure the player can't get any more cards after they bust
+- Test to make sure the user enters a positive integer for their bet that can be covered by the amount of money they have, before they make any moves
+- Test to make sure card is popped off the stack when the player hits
+- Test to make sure card is not popped when the player stays
+
+- For the dealer
+- Make sure the user can only see the dealer's first card when the user is going
+- Test to make sure the dealer busts if their cards sum to over 21
+- Test to make sure the dealer can't get any more cards after they bust
+- Test to make sure card is popped off the stack when the dealer hits
+- Test to make sure card is not popped when the dealer stays
+- Test to make sure the dealer wins if the user busts
+
+- More
+- Test to make sure the player is awarded the correct amount of money for the round if they win
+- Test to make sure the player loses the correct amount of money if they lose
+- Test to make sure the program ends if the user runs out of money
+
 
 ## Questions to answer for Exercise #2
 
