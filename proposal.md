@@ -101,10 +101,28 @@ the money that player bets on, the action of player take such as hit, stay, quit
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
 
-Main, Deck, BlackJack.
+
 
 Name each interface or class and briefly describe its function or purpose.
-
+Main
+- The main class runs the program.
+- Keeps track of the user's money
+- Creates a new BlackJack for every new round that is played
+- The functions hit and stay in BlackJack are called based on user input
+- Once the round finishes, it creates another new BlackJack if the user still has money and hasn't chosen to quit yet
+Deck
+- This class holds the stack for the deck
+- When created, 52 unique playing cards (Strings) are randomly put onto the stack
+- Works like a normal stack otherwise
+BlackJack
+- This class contains methods to play BlackJack
+- deals the user their cards by popping them off the stack
+- there are methods within in to allow the player to hit or stay
+- calculates if the user has busted or not
+- simulates the dealers hand
+- determines whether the user has won or lost
+BlackJackADT
+- contains the description of methods for how to implement the BlackJack class
 
 ## Edit and Submit this file and any figures referenced by this document.
 
