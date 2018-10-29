@@ -93,7 +93,7 @@ The amount money for each players and win or lose for this round of game.
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
-the money that player bets on, 
+the money that player bets on, the action of player take such as hit, stay, quit or continue.
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
 
