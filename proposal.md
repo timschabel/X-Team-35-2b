@@ -93,43 +93,17 @@ The amount money for each players and win or lose for this round of game.
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
-The amount of money that player bets on; the action the player take such as hit, stay, quit or continue.
+the money that player bets on, the action of player take such as hit, stay, quit or continue.
 
 4. User Interface: Describe a user interface for your program.  Use text menus or a simple graphic user interface.
-
-We will be using a text menu interface that displays the names of the cards (i.e 4 of hearts or Jack of spades) that the Player has in their hand and that the Dealer has "face up" on his side. There will also be a display of the player's remaining money every time a card is flipped. The text menu interface will simulate a black jack table with text. For example, it may look something like this:
-
-
-Welcome to CS 400's Blackjack Room! Minimum buy in is $100. 
-
-What amount would you like to bet for this round? (player's integer input)
-Remaining money: $134
-
-Dealer: Ace of spades , undisclosed card
-
-(Row of dashes)
-
-Player: Two of hearts, 9 of clubs
-
-(Row of dashes)
-
-What action would you like to take?
-Options: 
-hit
-stay
-quit
-continue
-
-(player's string input)
 
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
 
-
+Main, Deck, BlackJack.
 
 Name each interface or class and briefly describe its function or purpose.
-
 
 
 ## Edit and Submit this file and any figures referenced by this document.
